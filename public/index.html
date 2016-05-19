@@ -1,0 +1,38 @@
+<!doctype html>
+<html
+	<head>
+		<title>Jake Martinez</title>
+		<link rel= "stylesheet" href= "./stylesheets/style.css" type= " text/css"/>
+		<link rel= "stylesheet" href= "./stylesheets/index.css" type= " text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="./plugins/vegas/vegas.min.css">
+		<script src="./plugins/vegas/vegas.min.js"></script>
+	</head>
+	<body>
+		<ul id="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="./images/LJMresumeForWebsite.pdf">Resume</a></li>
+			<li><a href="index.html">Contact</a></li>
+			<li><a href="index.html">About</a></li>
+		</ul>
+		<main>
+			<h1 id = "homeTitle">Jake Martinez</h1>
+			<aside id = "subtitle">
+				Software Engineer
+			</aside>
+			<section id="images"></section>
+		</main>
+	</body>
+
+<script>
+	$("section").vegas({
+		timer: false,
+		slides: [
+			{ src: "./images/01.png" },
+			{ src: "./images/02.png" },
+			{ src: "./images/03.png" },
+	 		{ src: "./images/04.png" }
+		]
+	});
+</script>
+</html>
